@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXGEN — Modern Creative & Growth Studio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              black: '#090a0c',
+              card: '#111317',
+              border: '#1f242d',
+              accent: '#bef264', /* Electric lime */
+              accentHover: '#a3e635',
+              muted: '#8e96a4'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-black text-slate-100 font-sans antialiased selection:bg-brand-accent selection:text-black">
+
+  <!-- TOP GLOW EFFECT -->
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-brand-accent/10 blur-[130px] pointer-events-none rounded-full z-0"></div>
+
+  <!-- FLOATING NAVBAR -->
+  <header class="fixed top-5 inset-x-0 z-50 flex justify-center px-4">
+    <nav class="flex items-center justify-between w-full max-w-4xl px-5 py-3 rounded-full bg-brand-card/70 border border-brand-border backdrop-blur-xl shadow-2xl">
+      <a href="#" class="font-display font-bold tracking-tight text-xl text-white flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-brand-accent inline-block"></span>
+        nexgen<span class="text-brand-accent">.</span>
+      </a>
+      
+      <div class="hidden md:flex items-center gap-8 text-sm text-brand-muted font-medium">
+        <a href="#services" class="hover:text-white transition">Capabilities</a>
+        <a href="#work" class="hover:text-white transition">Work</a>
+        <a href="#packages" class="hover:text-white transition">Engagements</a>
+        <a href="#talent" class="hover:text-white transition">Creators</a>
+      </div>
+
+      <a href="#contact" class="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-black bg-brand-accent hover:bg-brand-accentHover rounded-full transition shadow-sm">
+        Start a brief
+      </a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main class="relative z-10 pt-36 md:pt-44 pb-20 px-6 max-w-6xl mx-auto">
+    <div class="flex flex-col items-center text-center">
+      
+      <!-- Live Status Pill -->
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-brand-border bg-brand-card/90 text-xs font-mono text-brand-muted mb-8">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Taking Select Q3/Q4 Briefs</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="font-display text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white max-w-4xl leading-[1.08]">
+        Creative engineered for the <span class="underline decoration-brand-accent decoration-2 underline-offset-8">next era</span> of social.
+      </h1>
+
+      <p class="mt-6 text-base sm:text-lg text-brand-muted max-w-2xl leading-relaxed font-normal">
+        NexGen is a social-first creative studio built for modern algorithms. We blend human storytelling with AI-driven production pipelines to produce content that converts.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="mt-10 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-brand-accent text-black font-semibold text-sm hover:bg-brand-accentHover transition shadow-lg shadow-brand-accent/10">
+          Book a Discovery Call
+        </a>
+        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full border border-brand-border bg-brand-card hover:bg-zinc-800 text-sm font-medium transition text-white">
+          Explore Services
+        </a>
+      </div>
+
+      <!-- Metric Pills / Social Proof -->
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-4xl pt-10 border-t border-brand-border/60">
+        <div class="p-4 text-left">
+          <p class="font-display text-3xl font-bold text-white">120M+</p>
+          <p class="text-xs text-brand-muted mt-1 uppercase tracking-wider">Organic Impressions</p>
+        </div>
+        <div class="p-4 text-left">
+          <p class="font-display text-3xl font-bold text-white">4.8x</p>
+          <p class="text-xs text-brand-muted mt-1 uppercase tracking-wider">Average ROAS</p>
+        </div>
+        <div class="p-4 text-left">
+          <p class="font-display text-3xl font-bold text-white">72h</p>
+          <p class="text-xs text-brand-muted mt-1 uppercase tracking-wider">Turnaround Sprint</p>
+        </div>
+        <div class="p-4 text-left">
+          <p class="font-display text-3xl font-bold text-brand-accent">Top 1%</p>
+          <p class="text-xs text-brand-muted mt-1 uppercase tracking-wider">Creator Network</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES / BENTO SECTION -->
+    <section id="services" class="mt-32">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-xs font-mono uppercase tracking-widest text-brand-accent">Our Capabilities</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">Built for speed, depth & conversion.</h2>
+        </div>
+        <p class="text-sm text-brand-muted max-w-md mt-4 md:mt-0">
+          Traditional production agencies are too slow. We use modular creator setups and AI production loops to test and scale at internet speed.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Bento 1 -->
+        <div class="md:col-span-2 p-8 rounded-3xl bg-brand-card border border-brand-border flex flex-col justify-between group hover:border-brand-accent/50 transition">
+          <div>
+            <span class="text-xs font-mono px-3 py-1 rounded-full bg-white/5 border border-white/10 text-brand-accent">01 // High Velocity</span>
+            <h3 class="font-display text-2xl font-bold text-white mt-6">Batch Content Engines</h3>
+            <p class="text-brand-muted text-sm mt-3 max-w-lg leading-relaxed">
+              We shoot, edit, and deliver ready-to-publish assets for TikTok, Meta Reels, and Shorts. No fluff—just thumb-stopping UGC and high-craft brand visuals.
+            </p>
+          </div>
+          <div class="mt-8 flex gap-2 flex-wrap">
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-900 border border-brand-border text-zinc-300">Hook Testing</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-900 border border-brand-border text-zinc-300">Creator Sourcing</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-900 border border-brand-border text-zinc-300">Batch Filming</span>
+          </div>
+        </div>
+
+        <!-- Bento 2 -->
+        <div class="p-8 rounded-3xl bg-brand-card border border-brand-border flex flex-col justify-between group hover:border-brand-accent/50 transition">
+          <div>
+            <span class="text-xs font-mono px-3 py-1 rounded-full bg-white/5 border border-white/10 text-brand-accent">02 // AI Workflows</span>
+            <h3 class="font-display text-2xl font-bold text-white mt-6">Next-Gen Video AI</h3>
+            <p class="text-brand-muted text-sm mt-3 leading-relaxed">
+              Automated localization, synthetic dynamic B-roll, and micro-variations for high-scale paid ad experiments.
+            </p>
+          </div>
+          <div class="mt-8">
+            <span class="text-xs text-brand-muted font-mono">10x Output Velocity</span>
+          </div>
+        </div>
+
+        <!-- Bento 3 -->
+        <div class="p-8 rounded-3xl bg-brand-card border border-brand-border flex flex-col justify-between group hover:border-brand-accent/50 transition">
+          <div>
+            <span class="text-xs font-mono px-3 py-1 rounded-full bg-white/5 border border-white/10 text-brand-accent">03 // Audit & Advisory</span>
+            <h3 class="font-display text-2xl font-bold text-white mt-6">Algorithmic Audits</h3>
+            <p class="text-brand-muted text-sm mt-3 leading-relaxed">
+              In-depth analysis of your hook retention, organic reach plateaus, and direct competitor teardowns.
+            </p>
+          </div>
+          <div class="mt-8">
+            <span class="text-xs text-brand-muted font-mono">Fixed 7-Day Sprint</span>
+          </div>
+        </div>
+
+        <!-- Bento 4 -->
+        <div class="md:col-span-2 p-8 rounded-3xl bg-brand-card border border-brand-border flex flex-col justify-between group hover:border-brand-accent/50 transition">
+          <div>
+            <span class="text-xs font-mono px-3 py-1 rounded-full bg-white/5 border border-white/10 text-brand-accent">04 // Custom</span>
+            <h3 class="font-display text-2xl font-bold text-white mt-6">Full Growth Retainer</h3>
+            <p class="text-brand-muted text-sm mt-3 max-w-lg leading-relaxed">
+              Your plug-and-play creative department. Dedicated strategist, creative director, lead video editor, and paid media specialist working in tandem.
+            </p>
+          </div>
+          <div class="mt-8 flex gap-2 flex-wrap">
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-900 border border-brand-border text-zinc-300">Dedicated Pod</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-900 border border-brand-border text-zinc-300">Weekly Iterations</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-900 border border-brand-border text-zinc-300">Whitelisting</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / INTAKE FORM (Like SocialCounter's Work With Us) -->
+    <section id="contact" class="mt-32 max-w-3xl mx-auto">
+      <div class="p-8 sm:p-12 rounded-3xl bg-brand-card border border-brand-border">
+        <span class="text-xs font-mono uppercase tracking-widest text-brand-accent">Let's Build</span>
+        <h2 class="font-display text-3xl font-bold text-white mt-2">Initiate your brief.</h2>
+        <p class="text-brand-muted text-sm mt-2">Tell us about your brand and what goals you're looking to crush this quarter.</p>
+
+        <form class="mt-8 space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input type="text" placeholder="Your Name" class="w-full px-4 py-3.5 rounded-xl bg-black border border-brand-border text-white text-sm focus:outline-none focus:border-brand-accent transition" required />
+            <input type="email" placeholder="Work Email" class="w-full px-4 py-3.5 rounded-xl bg-black border border-brand-border text-white text-sm focus:outline-none focus:border-brand-accent transition" required />
+          </div>
+          <input type="text" placeholder="Brand / Organization Name" class="w-full px-4 py-3.5 rounded-xl bg-black border border-brand-border text-white text-sm focus:outline-none focus:border-brand-accent transition" />
+          
+          <select class="w-full px-4 py-3.5 rounded-xl bg-black border border-brand-border text-brand-muted text-sm focus:outline-none focus:border-brand-accent transition">
+            <option>Select engagement scope...</option>
+            <option>Batch UGC / Content Engine</option>
+            <option>Organic Growth Retainer</option>
+            <option>Social Strategy & Audit</option>
+            <option>Bespoke Project</option>
+          </select>
+
+          <textarea rows="4" placeholder="Brief details, target metrics, or timeline..." class="w-full px-4 py-3.5 rounded-xl bg-black border border-brand-border text-white text-sm focus:outline-none focus:border-brand-accent transition"></textarea>
+
+          <button type="submit" class="w-full py-4 rounded-xl bg-brand-accent text-black font-semibold text-sm hover:bg-brand-accentHover transition shadow-lg shadow-brand-accent/10">
+            Submit Brief →
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-32 pt-12 border-t border-brand-border flex flex-col sm:flex-row justify-between items-center gap-6 text-xs text-brand-muted">
+      <p>© 2026 NEXGEN Creative Ltd. All rights reserved.</p>
+      <div class="flex gap-6 font-mono">
+        <a href="#" class="hover:text-white transition">Instagram</a>
+        <a href="#" class="hover:text-white transition">TikTok</a>
+        <a href="#" class="hover:text-white transition">LinkedIn</a>
+      </div>
+    </footer>
+  </main>
+
+</body>
+</html>
